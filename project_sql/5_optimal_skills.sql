@@ -50,8 +50,9 @@ FROM skills_demand
 INNER JOIN
     average_salary ON average_salary.skill_id = skills_demand.skill_id 
 ORDER BY 
-    demand_count DESC,
-    avg_salary DESC
+    avg_salary DESC,
+    demand_count DESC
+    
 LIMIT 10
 
 -- Identifies skills in high demand for Data Analyst roles
